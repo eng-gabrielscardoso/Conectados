@@ -1,0 +1,141 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html,body { height: 100%; }
+
+/* general */
+.clear { clear: both; }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.logo-container { 
+    float: left; 
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.logo-container img {
+    width: 240px;
+    height: 70px;
+}
+
+.desktop-menu { float: right; }
+
+.desktop-menu ul {
+    list-style-type: none;
+}
+
+.desktop-menu ul li { 
+    float: left;
+    margin-top: 32px;
+    margin-right: 70px;
+}
+
+.desktop-menu ul li a {
+    color: #8281a4;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mobile-menu { display: none; }
+
+/* background */
+.background img {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 480px; 
+}
+
+/* partners */
+.partners {
+    width: 100%;
+    height: auto;
+    background-color: pink;
+}
+
+.partners .logo-partners-wraper {
+    display: inline-block;
+    margin-left: 45px;
+    margin-right: -4px;
+    padding: 1% 2%;
+}
+
+.partners .logo-partners-wraper .logo-partner {
+    width: 200px;
+    height: 80px;
+    background-color: blue;
+    background-size: cover;
+}
+
+/* first-headline */
+.first-headline h1 {
+    padding: 40px 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first-headline p {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 2%;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.first-headline .btn-join {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color:#181839;
+    border-radius: 18px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.first-headline .btn-join p {
+    color: white;
+    padding-top: 1px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.first-headline .btn-join:hover {
+    border: 2px solid #181839;
+    border-radius: 18px;
+    background-color: white;
+}
+
+.first-headline .btn-join p:hover { color: #181839; }
+
+/* second-headline */
+
+
+/* add-information */ 
+
+
+/* footer */
+footer {
+    color: #181839;
+    font-size: 20px;
+}
+
+.column-1 { float: left; }
+
+.column-2 { float: right; }
+
+/* media-queries */
