@@ -1,4 +1,6 @@
-init();
-function init(){
-  console.log('Page completely render');
-};
+$(function(){
+    // mobile-menu
+    $('#menuIcon').click(function(){
+        $('#mobileMenu').slideToggle();
+    });
+});
