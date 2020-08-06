@@ -2,6 +2,22 @@
 $(function(){
     $('#btnPerson').click(function(){
         $('#firstStep').fadeOut();
-        $('#secondStep').fadeIn();
+        $('#secondStepPerson').fadeIn();
     });
+
+    $('#btnVoluntary').click(function(){
+        $('#firstStep').fadeOut();
+        $('#secondStepVoluntary').fadeIn(function(){
+            $('#btnPf').click(function(){
+                $('#secondStepVoluntary').fadeOut();
+                $('#thirdStepVoluntaryPf').fadeIn();
+            });
+    
+            $('#btnPj').click(function(){
+                $('#secondStepVoluntary').fadeOut();
+                $('#thirdStepVoluntaryPj').fadeIn();
+            })
+        });
+    });
+
 });
