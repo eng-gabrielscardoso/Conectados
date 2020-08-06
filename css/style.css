@@ -199,8 +199,12 @@ html,body { height: 100%; }
 .add-information .wraper-logo-conectados {
     width: 240px;
     height: 70px;
+    margin: 0 auto;
     margin-left: 70px;
-    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/logo-conectados-white.png');
 }
 
 .add-information .wraper-menu-shortcut { text-align: center; }
@@ -212,13 +216,17 @@ html,body { height: 100%; }
     text-decoration: none;
 }
 
-.add-information .wraper-add-informations p { color: white; }
+.add-information .wraper-add-informations p { 
+    color: white;
+    font-size: right; 
+}
 
 /* footer */
 footer {
     margin: 10px 0;
+    padding: 0 4%;
     color: #181839;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .column-1 { float: left; }
