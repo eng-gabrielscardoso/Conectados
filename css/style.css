@@ -47,6 +47,16 @@ html,body { height: 100%; }
     font-size: 20px;
 }
 
+.menu-icon {
+    display: none;
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../icon/open-menu.png')
+}
+
 .mobile-menu { display: none; }
 
 /* background */
@@ -61,7 +71,6 @@ html,body { height: 100%; }
 .partners {
     width: 100%;
     height: auto;
-    background-color: pink;
 }
 
 .partners .logo-partners-wraper {
@@ -74,7 +83,7 @@ html,body { height: 100%; }
 .partners .logo-partners-wraper .logo-partner {
     width: 200px;
     height: 80px;
-    background-color: blue;
+    background-color: black;
     background-size: cover;
 }
 
@@ -93,6 +102,7 @@ html,body { height: 100%; }
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    padding: 2% 2%;
     text-align: justify;
     line-height: 35px;
 }
@@ -142,21 +152,27 @@ html,body { height: 100%; }
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../icon/together.png');
 }
 
 .wraper-content .icon-mission {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../icon/mission.png');
 }
 
 .wraper-content .icon-impact {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../icon/impact.png');
 }
 .wraper-content h3 {
     margin-top: 30px;
@@ -196,9 +212,7 @@ html,body { height: 100%; }
     text-decoration: none;
 }
 
-.add-information .wraper-add-informations p {
-    color: white;
-}
+.add-information .wraper-add-informations p { color: white; }
 
 /* footer */
 footer {
@@ -238,6 +252,15 @@ footer {
     .partners .logo-partners-wraper { margin-left: 30px; }
 }
 
+@media screen and (max-width: 1016px) {
+    /* header */
+    .logo-container { margin-left: 30px; }
+
+    .logo-container img { width: 170px; }
+
+    .desktop-menu ul li { margin-right: 30px; }
+}
+
 @media screen and (max-width: 984px) {
     /* partners */
     .partners .logo-partners-wraper { margin-left: 20px; }
@@ -253,12 +276,155 @@ footer {
     .partners .logo-partners-wraper { margin-left: 10px; }
 }
 
+@media screen and (max-width: 874px) {
+    .desktop-menu { display: none; }
+
+    .menu-icon { 
+        display: block;
+        margin-top: 8px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: inline;
+        text-align: center;
+    }
+
+    .mobile-menu ul { list-style-type: none; }
+
+    .mobile-menu ul li { border-bottom: 2px solid #8c81a4; }
+
+    .mobile-menu ul li a {
+        color: #8c81a4;
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width: 864px) {
     /* partners */     
     .partners .logo-partners-wraper { margin-left: 0; }
 }
 
+@media screen and (max-width: 856px) {
+    /* header */
+
+}
+
 @media screen and (max-width: 806px) {
     /* partners */
 
+}
+
+@media screen and (max-width: 484px) {
+    /* header */
+    .logo-container { 
+        float: left; 
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    
+    .logo-container img {
+        width: 170px;
+        height: 70px;
+    }
+
+    .menu-icon { 
+        width: 40px;
+        height: 40px;
+        margin-top: 21px;
+    }
+    
+    /* first-headline */
+    .first-headline p {
+        padding: 2% 4%;
+        font-size: 13px;
+    }
+    
+    .first-headline .btn-join { width: 170px; }
+    
+    .first-headline .btn-join p { font-size: 13px; }
+
+    /* second-headline */
+    .wraper-content { display: inline; }
+    
+    .wraper-content .icon-team {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .wraper-content .icon-mission {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .wraper-content .icon-impact {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* add-information */
+    .add-information {
+        width: 100%;
+        height: auto;
+        padding: 60px 2%;
+        background-color: #181839;
+    }
+    
+    .add-information .wraper-logo-conectados {
+        width: 240px;
+        height: 70px;
+        margin: 0 auto;
+        background-color: black;
+    }
+    
+    .add-information .wraper-menu-shortcut { 
+        padding: 40px 0;
+        text-align: center; 
+    }
+    
+    .add-information .wraper-menu-shortcut ul { list-style-type: none; }
+    
+    .add-information .wraper-menu-shortcut ul li a { 
+        color: white;
+        text-decoration: none;
+    }
+    
+    .add-information .wraper-add-informations .mail-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../icon/mail.png')
+    }
+
+    .add-information .wraper-add-informations .phone-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../icon/phone.png')
+    }
+
+    .add-information .wraper-add-informations .address-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../icon/address.png')
+    }
+
+    .add-information .wraper-add-informations p { 
+        color: white; 
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer p {
+        padding: 0 2%;
+        font-size: 13px;
+    }
 }
