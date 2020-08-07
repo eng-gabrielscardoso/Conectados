@@ -326,7 +326,7 @@ footer {
     }
 
     .mobile-menu {
-        display: inline;
+        display: none;
         text-align: center;
     }
 
