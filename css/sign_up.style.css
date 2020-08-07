@@ -5,18 +5,17 @@ main {
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 110px;
+    padding: 40px 2%;
 }
 
 /* first step */
 .first-step {
     display: inline;
-    width: 100%;
-    height: auto;
     max-width: 1200px;
 }
 
-.first-step .btn-person, .btn-voluntary {
+.first-step .btn-person,
+.btn-voluntary {
     width: 270px;
     height: 70px;
     margin: 0 auto;
@@ -32,7 +31,8 @@ main {
     border: 2px solid #8281b7;
 }
 
-.first-step .btn-person:hover, .btn-voluntary:hover {
+.first-step .btn-person:hover,
+.btn-voluntary:hover {
     width: 270px;
     height: 70px;
     margin: 0 auto;
@@ -49,16 +49,11 @@ main {
 }
 
 /* second-step */
-.second-step-person, .second-step-voluntary { display: none; }
+.second-step-person,
+.second-step-voluntary { display: none; }
 
-.first-step {
-    display: inline;
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-}
-
-.second-step-voluntary .btn-pf, .btn-pj {
+.second-step-voluntary .btn-pf,
+.btn-pj {
     width: 270px;
     height: 70px;
     margin: 0 auto;
@@ -74,7 +69,8 @@ main {
     border: 2px solid #8281b7;
 }
 
-.second-step-voluntary .btn-pf:hover, .btn-pj:hover {
+.second-step-voluntary .btn-pf:hover,
+.btn-pj:hover {
     width: 270px;
     height: 70px;
     margin: 0 auto;
@@ -90,5 +86,24 @@ main {
     border: 2px solid #8281b7;
 }
 
+/* second step person*/
+
+
+.second-step-person #formPerson .submit-form-person {
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #181839;
+    border: 2px solid #8281b7;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* third step voluntary */
-.third-step-voluntary-pf, .third-step-voluntary-pj { display: none; }
+.third-step-voluntary-pf,
+.third-step-voluntary-pj { display: none; }
