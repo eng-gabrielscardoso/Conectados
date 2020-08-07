@@ -104,6 +104,33 @@ main {
     text-transform: uppercase;
 }
 
+.second-step-person #formPerson .submit-form-person:hover {
+    color: #8281b7;
+    background-color: white;
+}
+
 /* third step voluntary */
 .third-step-voluntary-pf,
 .third-step-voluntary-pj { display: none; }
+
+.third-step-voluntary-pf #formVoluntaryPf .submit-form-voluntary-pf,
+.third-step-voluntary-pj #formVoluntaryPj .submit-form-voluntary-pj {
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #181839;
+    border: 2px solid #8281b7;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.third-step-voluntary-pf #formVoluntaryPf .submit-form-voluntary-pf:hover,
+.third-step-voluntary-pj #formVoluntaryPj .submit-form-voluntary-pj:hover {
+    color: #8281b7;
+    background-color: white;
+}
