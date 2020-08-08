@@ -31,7 +31,10 @@
     width: 240px;
     height: 90px;
     margin: 0 auto;
-    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/logo-biblios.png');
 }
 
 /* desafio recoders */
@@ -62,9 +65,41 @@
 }
 
 /* wraper-members */
-.container {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
+.flex-mosaic {
+	display: flex;
+
+}
+
+.item1-mosaic {
+	width: 40%;
+	background-position: center;
+	background-size: cover;
+	border: 2px solid white;
+}
+
+.item2-mosaic {
+	width: 60%;
+	padding: 60px 40px;
+	color: white;
+	text-align: justify;
+	background-color: #181839;
+	border: 2px solid white;
+}
+
+.item2-mosaic h2 { text-align: center; }
+
+/* medias queries */
+@media screen and (max-width: 768px) {
+	.flex-mosaic {
+		display: block;
+	}
+
+	.item1-mosaic {
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	.item2-mosaic {
+		width: 100%;
+	}
 }
