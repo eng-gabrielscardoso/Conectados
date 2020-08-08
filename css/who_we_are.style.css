@@ -37,33 +37,6 @@
     background-image: url('../img/logo-biblios.png');
 }
 
-/* desafio recoders */
-.desafio-recoders {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #8c81a4;
-}
-
-.desafio-recoders h1 {
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.desafio-recoders p {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 4%;
-    padding-bottom: 20px;
-    color: white;
-    text-align: justify;
-    line-height: 20px;
-}
-
 /* wraper-members */
 .flex-mosaic {
 	display: flex;
