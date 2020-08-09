@@ -93,6 +93,10 @@ html,body {
 /* first-headline */
 .first-headline {
     margin: 80px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/welcome.JPG')
 }
 
 .first-headline h1 {
