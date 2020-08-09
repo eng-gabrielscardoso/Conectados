@@ -18,6 +18,7 @@
     <!-- scripts -->
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/sign_in.script.js"></script>
     <!-- title -->
     <title>Login</title>
 </head>
@@ -52,7 +53,60 @@
 
     <!-- init main -->
     <main>
-        
+        <div id="firstStepLogin" class="first-step-login">
+            <div id="btnLoginPerson" class="btn-login-person">Sou um beneficiário</div>
+            <div id="btnLoginVoluntary" class="btn-login-voluntary">Sou um voluntário</div>
+        </div><!-- first-step-login -->
+
+        <div id="loginPerson" class="login-person">
+            <form action="" id="formLoginPerson">
+                <h2>Seja Bem-vindo de Volta!</h2>
+                <br>
+                <input type="email" name="" id="emailLoginPerson" class="email-login-person" required placeholder="E-mail">
+                <br>
+                <input type="password" name="" id="passwordLoginPerson" class="password-login-person" required placeholder="Senha">
+                <br>
+                <br>
+                <p><a href="">Esqueceu a senha?</a></p>
+                <br>
+                <input type="submit" value="Entrar" id="submitLoginPerson" class="submit-login-person">
+            </form><!-- form-login-person -->
+        </div><!-- login-person -->
+
+        <div id="secondStepLoginVoluntary" class="second-step-login-voluntary">
+            <div id="btnLoginVoluntaryPf" class="btn-login-voluntary-pf">Sou uma pessoa física</div>
+            <div id="btnLoginVoluntaryPj" class="btn-login-voluntary-pj">Sou uma pessoa jurídica</div>
+        </div><!-- second-step-login-voluntary -->
+
+        <div id="loginVoluntaryPf" class="login-voluntary-pf">
+            <form action="" id="formLoginVoluntaryPf">
+                <h2>Seja Bem-vindo de Volta!</h2>
+                <br>
+                <input type="email" name="" id="emailLoginVoluntaryPf" class="email-login-voluntary-pf" required placeholder="E-mail">
+                <br>
+                <input type="password" name="" id="passwordLoginVoluntaryPf" class="password-login-voluntary-pf" required placeholder="Senha">
+                <br>
+                <br>
+                <p><a href="">Esqueceu a senha?</a></p>
+                <br>
+                <input type="submit" value="Entrar" id="submitLoginVoluntaryPf" class="submit-login-voluntary-pf">
+            </form><!-- form-login-voluntary-pf -->
+        </div><!-- login-voluntary-pf -->
+
+        <div id="loginVoluntaryPj" class="login-voluntary-pj">
+            <form action="" id="formLoginVoluntaryPj">
+                <h2>Seja Bem-vindo de Volta!</h2>
+                <br>
+                <input type="email" name="" id="emailLoginVoluntaryPj" class="email-login-voluntary-pj" required placeholder="E-mail">
+                <br>
+                <input type="password" name="" id="passwordLoginVoluntaryPj" class="password-login-voluntary-pj" required placeholder="Senha">
+                <br>
+                <br>
+                <p><a href="">Esqueceu a senha?</a></p>
+                <br>
+                <input type="submit" value="Entrar" id="submitLoginVoluntaryPj" class="submit-login-voluntary-pj">
+            </form><!-- form-login-voluntary-pj -->
+        </div><!-- login-voluntary-pj -->
     </main>
     <!-- end main -->
 
