@@ -1,1 +1,0 @@
-/* our cause page script */
