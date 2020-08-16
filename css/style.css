@@ -41,7 +41,10 @@
 /*************************/
 
 /* *Custom Stylesheet of OUR MISSION* */
-
+.what-we-do-text,
+.partnerships-text,
+.voluntaries-text,
+.final-text { text-align: justify; }
 /*************************/
 
 /* *Custom Stylesheet of SIGN UP* */
