@@ -41,6 +41,13 @@
 /*************************/
 
 /* *Custom Stylesheet of OUR MISSION* */
+.what-we-do,
+.partnerships,
+.voluntaries { 
+  border-radius: 20px;
+  border: 4px solid white;
+}
+
 .what-we-do-text,
 .partnerships-text,
 .voluntaries-text,
