@@ -15,6 +15,9 @@
 	font-size: inherit;
 }
 
+/* header */
+.logo-wraper { margin-top: 30px;}
+
 /* partners */
 .container-partner {
   display: inline-block;
@@ -22,7 +25,16 @@
 }
 
 /* welcome */
-.welcome-text { text-align: justify !important; }
+.welcome {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/welcome.jpg);
+}
+
+.welcome-text,
+.footer-text { text-align: justify !important; }
 
 /* medias queries */
 @media screen and (max-width: 768px) {
@@ -35,9 +47,16 @@
 
 /* *Custom Stylesheet of OUR TEAM* */
 /* team-information */
+.team-information {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/team.jpg);
+}
+
 .team-text,
 .biography-text { text-align: justify; }
-
 /*************************/
 
 /* *Custom Stylesheet of OUR MISSION* */
