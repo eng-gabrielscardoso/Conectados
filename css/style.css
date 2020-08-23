@@ -1,89 +1,89 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-/* *Custom Stylesheet of INDEX* */
-/* device */
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
-/* header */
-.logo-wraper { margin-top: 30px;}
-
-/* partners */
-.container-partner {
-  display: inline-block;
-  width: (100% / 4) ;
-}
-
-/* welcome */
-.welcome {
-  padding: 100px 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/welcome.jpg);
-}
-
-.welcome-text,
-.footer-text { text-align: justify !important; }
-
-/* medias queries */
-@media screen and (max-width: 768px) {
-  footer .footer-mobile p {
-    float: none !important;
-    text-align: center !important;
-  }
-}
-/*************************/
-
-/* *Custom Stylesheet of OUR TEAM* */
-/* team-information */
-.team-information {
-  padding: 100px 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/team.jpg);
-}
-
-.team-text,
-.biography-text { text-align: justify; }
-/*************************/
-
-/* *Custom Stylesheet of OUR MISSION* */
-.what-we-do,
-.partnerships,
-.voluntaries { 
-  border-radius: 20px;
-  border: 4px solid white;
-}
-
-.what-we-do-text,
-.partnerships-text,
-.voluntaries-text,
-.final-text { text-align: justify; }
-/*************************/
-
-/* *Custom Stylesheet of SIGN UP* */
-.registration-beneficiary,
-.second-step,
-.registration-voluntary-pf,
-.registration-voluntary-pj { display: none; }
-
-/*************************/
-
-/* *Custom Stylesheet of SIGN IN* */
-.login-beneficiary,
-.login-voluntary-pf,
-.login-voluntary-pj { display: none; }
-
-/*************************/
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* *Custom Stylesheet of INDEX* */
+/* device */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/* header */
+.logo-wraper { margin-top: 30px;}
+
+/* partners */
+.container-partner {
+  display: inline-block;
+  width: (100% / 4) ;
+}
+
+/* welcome */
+.welcome {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/welcome.jpg);
+}
+
+.welcome-text,
+.footer-text { text-align: justify !important; }
+
+/* medias queries */
+@media screen and (max-width: 768px) {
+  footer .footer-mobile p {
+    float: none !important;
+    text-align: center !important;
+  }
+}
+/*************************/
+
+/* *Custom Stylesheet of OUR TEAM* */
+/* team-information */
+.team-information {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/team.jpg);
+}
+
+.team-text,
+.biography-text { text-align: justify; }
+/*************************/
+
+/* *Custom Stylesheet of OUR MISSION* */
+.what-we-do,
+.partnerships,
+.voluntaries { 
+  border-radius: 20px;
+  border: 4px solid white;
+}
+
+.what-we-do-text,
+.partnerships-text,
+.voluntaries-text,
+.final-text { text-align: justify; }
+/*************************/
+
+/* *Custom Stylesheet of SIGN UP* */
+.registration-beneficiary,
+.second-step,
+.registration-voluntary-pf,
+.registration-voluntary-pj { display: none; }
+
+/*************************/
+
+/* *Custom Stylesheet of SIGN IN* */
+.login-beneficiary,
+.login-voluntary-pf,
+.login-voluntary-pj { display: none; }
+
+/*************************/

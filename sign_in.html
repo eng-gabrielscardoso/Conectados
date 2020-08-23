@@ -22,7 +22,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel='manifest' href='/manifest.json'>
   <link rel="shortcut icon" href="./img/conectados-icon.png" type="image/x-icon" />
+  <!-- service workers -->
+  
   <!-- title -->
   <title>Plataforma - Conectados</title>
 </head>
@@ -74,16 +77,16 @@
         </div>
       </div>
       <div class="row">
-         <form method="POST" action="./services/signinlogin.php" class="col s12 l12">
+        <form method="POST" action="./services/signInLogin.php" class="col s12 l12">
           <div class="row">
             <div class="input-field col s12 l12">
-              <input id="emailLoginBeneficiary" type="email" class="validate" required>
+              <input id="emailLoginBeneficiary" name="emailLoginBeneficiary" type="email" class="validate" required>
               <label for="emailLoginBeneficiary">E-mail</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 l12">
-              <input id="passwordLoginBeneficiary" type="password" class="validate" required>
+              <input id="passwordLoginBeneficiary" name="passwordLoginBeneficiary" type="password" class="validate" required>
               <label for="passwordLoginBeneficiary">Senha</label>
             </div>
             <div class="col s12 l12 center">

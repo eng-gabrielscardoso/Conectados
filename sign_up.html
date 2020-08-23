@@ -1,490 +1,494 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <!-- device meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- seo meta tags -->
-  <meta name="author" content="Gabriel Santos Cardoso - Equipe Biblios">
-  <meta name="description" content="Site desenvolvido com o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio">
-  <meta name="keywords" content="conectados,solidário,auxílio,Barcarena,social">
-  <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="">
-  <meta name="format-detection" content="telephone=no">
-  <meta property="og:title" content="Conectados">
-  <meta property="og:site_name" content="Conectados">
-  <meta property="og:description" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:type" content="image/jpeg">
-  <!-- links  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="shortcut icon" href="./img/conectados-icon.png" type="image/x-icon" />
-  <!-- title -->
-  <title>Cadastro - Conectados</title>
-</head>
-<body>
-  <nav class="green darken-3" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="./index.html" class="brand-logo">Conectados</a>
-      <!-- desktop-menu -->
-      <ul class="right hide-on-med-and-down">
-        <li><a href="./index.html">Início</a></li>
-        <li><a href="./our_team.html">Nosso time</a></li>
-        <li><a href="./our_mission.html">Nossa proposta</a></li>
-        <li><a href="./sign_up.html">Cadastro</a></li>
-        <li><a href="./sign_in.html">Plataforma</a></li>
-      </ul>
-      <!-- mobile-menu -->
-      <ul id="nav-mobile" class="sidenav">
-        <div class="container center logo-wraper"><img width="60" src="./img/conectados-icon.png"></div>
-        <li><a class="green-text text-darken-1" href="./index.html">Início</a></li>
-        <li><a class="green-text text-darken-1" href="./our_team.html">Nosso time</a></li>
-        <li><a class="green-text text-darken-1" href="./our_mission.html">Nossa proposta</a></li>
-        <li><a class="green-text text-darken-1" href="./sign_up.html">Cadastro</a></li>
-        <li><a class="green-text text-darken-1" href="./sign_in.html">Plataforma</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div><!-- container -->
-  </nav>
-
-  <div id="firstStep" class="section first-step">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 l12 center">
-            <a id="btnRegisterBeneficiary" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">assignment_ind</i>Beneficiário</a>
-          </div><!-- beneficiary -->
-        </div><!-- row -->
-        <div class="row">
-          <div class="col s12 l12 center">
-            <a id="btnRegisterVoluntary" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">loyalty</i>Voluntário</a>
-          </div><!-- voluntary -->
-        </div><!-- row -->
-      </div><!-- container -->
-  </div><!-- section first step -->
-
-  <div id="registrationBeneficiary" class="section registration-beneficiary">
-    <div class="container">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="firstNameBeneficiary" type="text" class="validate" required>
-              <label for="firstNameBeneficiary">Primeiro Nome</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="lastNameBeneficiary" type="text" class="validate" required>
-              <label for="lastNameBeneficiary">Sobrenome</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input placeholder="Apenas Números" id="cpfBeneficiary" type="text" class="validate" minLength="11" maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
-              <label for="cpfBeneficiary">CPF</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="emailBeneficiary" type="email" class="validate" required>
-              <label for="emailBeneficiary">E-mail</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="passwordBeneficiary" type="password" class="validate" required>
-              <label for="passwordBeneficiary">Senha</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="passwordConfirmBeneficiary" type="password" class="validate" required>
-              <label for="passwordConfirmBeneficiary">Confirmar senha</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="addressBeneficiary" type="text" class="validate" required>
-              <label for="addressBeneficiary">Endereço</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="numberAddressBeneficiary" type="text" class="validate" required>
-              <label for="numberAddressBeneficiary">Número</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l12">
-              <input id="complementAddressBeneficiary" type="text" class="validate">
-              <label for="complementAddressBeneficiary">Complemento</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="Água Verde">Água Verde</option>
-                <option value="Bairro Novo I">Bairro Novo I</option>
-                <option value="Bairro Novo II">Bairro Novo II</option>
-                <option value="Betânia">Betânia</option>
-                <option value="Centro">Centro</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Itupanema">Itupanema</option>
-                <option value="Jardim Cabano">Jardim Cabano</option>
-                <option value="Laranjal">Laranjal</option>
-                <option value="Nazaré">Nazaré</option>
-                <option value="Pedreira">Pedreira</option>
-                <option value="Vila do Conde">Vila do Conde</option>
-                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
-                <option value="Outro">Outro</option>
-              </select>
-              <label>Bairro</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Barcarena</option>
-                <option value="2">Outra</option>
-              </select>
-              <label>Cidade</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Pará</option>
-                <option value="2">Outro</option>
-              </select>
-              <label>Estado</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Não possuo renda</option>
-                <option value="2">Abaixo de um salário mínimo</option>
-                <option value="3">Um salário mínimo</option>
-                <option value="4">Acima de um salário mínimo</option>
-              </select>
-              <label>Qual sua renda?</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Sim</option>
-                <option value="2">Não</option>
-              </select>
-              <label>Possui CadÚnico ou número NIS?</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 l12 center">
-              <button id="submitRegistrationBeneficiary" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div><!-- container -->
-  </div><!-- section registration-beneficiary -->
-
-  <div id="secondStep" class="section second-step">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l12 center">
-          <a id="btnRegisterVoluntaryPf" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">person</i>Pessoa Física</a>
-        </div><!-- voluntary pf -->
-      </div><!-- row -->
-      <div class="row">
-        <div class="col s12 l12 center">
-          <a id="btnRegisterVoluntaryPj" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">business</i>Pessoa Jurídica</a>
-        </div><!-- voluntary pj -->
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- section second step -->
-
-  <div id="registrationVoluntaryPf" class="section registration-voluntary-pf">
-    <div class="container">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="firstNameVoluntaryPf" type="text" class="validate" required>
-              <label for="firstNameVoluntaryPf">Primeiro Nome</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="lastNameVoluntaryPf" type="text" class="validate" required>
-              <label for="lastNameVoluntaryPf">Sobrenome</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input placeholder="Apenas Números" id="cpfVoluntary" type="text" class="validate" minLength="11" maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
-              <label for="cpfVoluntary">CPF</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="emailVoluntaryPf" type="email" class="validate" required>
-              <label for="emailVoluntaryPf">E-mail</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="passwordVoluntaryPf" type="password" class="validate" required>
-              <label for="passwordVoluntaryPf">Senha</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="passwordConfirmVoluntaryPf" type="password" class="validate" required>
-              <label for="passwordConfirmVoluntaryPf">Confirmar senha</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="addressVoluntaryPf" type="text" class="validate" required>
-              <label for="addressVoluntaryPf">Endereço</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="numberAddressVoluntaryPf" type="text" class="validate" required>
-              <label for="numberAddressVoluntaryPf">Número</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l12">
-              <input id="complementAddressVoluntaryPf" type="text" class="validate">
-              <label for="complementAddressVoluntaryPf">Complemento</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="Água Verde">Água Verde</option>
-                <option value="Bairro Novo I">Bairro Novo I</option>
-                <option value="Bairro Novo II">Bairro Novo II</option>
-                <option value="Betânia">Betânia</option>
-                <option value="Centro">Centro</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Itupanema">Itupanema</option>
-                <option value="Jardim Cabano">Jardim Cabano</option>
-                <option value="Laranjal">Laranjal</option>
-                <option value="Nazaré">Nazaré</option>
-                <option value="Pedreira">Pedreira</option>
-                <option value="Vila do Conde">Vila do Conde</option>
-                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
-                <option value="Outro">Outro</option>
-              </select>
-              <label>Bairro</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Barcarena</option>
-                <option value="2">Outra</option>
-              </select>
-              <label>Cidade</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Pará</option>
-                <option value="2">Outro</option>
-              </select>
-              <label>Estado</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Doações de bens perecíveis</option>
-                <option value="2">Doações de bens não perecíveis</option>
-                <option value="3">Doação de bens diversos</option>
-                <option value="4">Voluntariado em ações comunitárias</option>
-                <option value="5">Outras ações solidárias</option>
-              </select>
-              <label>Como desejo ajudar:</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Sim</option>
-                <option value="2">Não</option>
-              </select>
-              <label>Deseja se cadastrar como beneficiário?</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 l12 center">
-              <button id="submitRegistrationVoluntaryPf" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div><!-- container -->
-  </div><!-- section registration-voluntary-pf -->
-
-  <div id="registrationVoluntaryPj" class="section registration-voluntary-pj">
-    <div class="container">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="companyName" type="text" class="validate" required>
-              <label for="companyName">Razão Social</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="fantasyName" type="text" class="validate" required>
-              <label for="fantasyName">Nome Fantasia</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input placeholder="Apenas Números" id="cnpjVoluntary" type="text" class="validate" minLength="14" maxlength="14" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
-              <label for="cnpjVoluntary">CNPJ</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="emailVoluntaryPj" type="email" class="validate" required>
-              <label for="emailVoluntaryPj">E-mail</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="passwordVoluntaryPj" type="password" class="validate" required>
-              <label for="passwordVoluntaryPj">Senha</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="passwordConfirmVoluntaryPj" type="password" class="validate" required>
-              <label for="passwordConfirmVoluntaryPj">Confirmar senha</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <input id="addressVoluntaryPj" type="text" class="validate" required>
-              <label for="addressVoluntaryPj">Endereço</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <input id="numberAddressVoluntaryPj" type="text" class="validate" required>
-              <label for="numberAddressVoluntaryPj">Número</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l12">
-              <input id="complementAddressVoluntaryPj" type="text" class="validate">
-              <label for="complementAddressVoluntaryPj">Complemento</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="Água Verde">Água Verde</option>
-                <option value="Bairro Novo I">Bairro Novo I</option>
-                <option value="Bairro Novo II">Bairro Novo II</option>
-                <option value="Betânia">Betânia</option>
-                <option value="Centro">Centro</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Itupanema">Itupanema</option>
-                <option value="Jardim Cabano">Jardim Cabano</option>
-                <option value="Laranjal">Laranjal</option>
-                <option value="Nazaré">Nazaré</option>
-                <option value="Pedreira">Pedreira</option>
-                <option value="Vila do Conde">Vila do Conde</option>
-                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
-                <option value="Outro">Outro</option>
-              </select>
-              <label>Bairro</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Barcarena</option>
-                <option value="2">Outra</option>
-              </select>
-              <label>Cidade</label>
-            </div>
-            <div class="input-field col s12 l4">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Pará</option>
-                <option value="2">Outro</option>
-              </select>
-              <label>Estado</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Doações de bens perecíveis</option>
-                <option value="2">Doações de bens não perecíveis</option>
-                <option value="3">Doação de bens diversos</option>
-                <option value="4">Voluntariado em ações comunitárias</option>
-                <option value="5">Outras ações solidárias</option>
-              </select>
-              <label>Como desejo ajudar:</label>
-            </div>
-            <div class="input-field col s12 l6">
-              <select>
-                <option value="" disabled selected>Escolha sua opção</option>
-                <option value="1">Sim</option>
-                <option value="2">Não</option>
-              </select>
-              <label>Deseja se cadastrar como beneficiário?</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 l12 center">
-              <button id="submitRegistrationVoluntaryPj" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div><!-- container -->
-  </div><!-- section registration-voluntary-pj -->
-
-  <footer class="page-footer green darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Conectados</h5>
-          <p class="grey-text text-lighten-4">
-              Temos o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio.
-          </p>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Navegue pelo site</h5>
-          <ul>
-              <li><a class="white-text" href="./index.html">Início</a></li>
-              <li><a class="white-text" href="./our_team.html">Nosso time</a></li>
-              <li><a class="white-text" href="./our_mission.html">Nossa proposta</a></li>
-              <li><a class="white-text" href="./sign_up.html">Cadastro</a></li>
-              <li><a class="white-text" href="./sign_in.html">Plataforma</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Informações</h5>
-          <ul>
-            <i class="material-icons">email</i>
-            <li class="white-text">equipebiblios@gmail.com</li>
-            <i class="material-icons">phone</i>
-            <li class="white-text">(91) 9 8516-0142</li>
-            <i class="material-icons">place</i>
-            <li class="white-text">Tv. da Matriz, prox. ao MPPA</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-copyright">
-          <div class="container footer-mobile">
-            <p class="white-text s12 l6 left">&copy;Conectados v. 1.2.20</p>
-            <p class="white-text s12 l6 right">Desenvolvido por G. S. Cardoso e Equipe Biblios</p>
-          </div>
-        </div><!-- footer-copyright -->
-    </div> <!-- container -->
-  </footer>
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./js/materialize.js"></script>
-  <script src="./js/init.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- device meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- seo meta tags -->
+  <meta name="author" content="Gabriel Santos Cardoso - Equipe Biblios">
+  <meta name="description" content="Site desenvolvido com o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio">
+  <meta name="keywords" content="conectados,solidário,auxílio,Barcarena,social">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:title" content="Conectados">
+  <meta property="og:site_name" content="Conectados">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:type" content="image/jpeg">
+  <!-- links  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="./img/conectados-icon.png" type="image/x-icon" />
+  <!-- title -->
+  <title>Cadastro - Conectados</title>
+</head>
+<body>
+  <nav class="green darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="./index.html" class="brand-logo">Conectados</a>
+      <!-- desktop-menu -->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./our_team.html">Nosso time</a></li>
+        <li><a href="./our_mission.html">Nossa proposta</a></li>
+        <li><a href="./sign_up.html">Cadastro</a></li>
+        <li><a href="./sign_in.html">Plataforma</a></li>
+      </ul>
+      <!-- mobile-menu -->
+      <ul id="nav-mobile" class="sidenav">
+        <div class="container center logo-wraper"><img width="60" src="./img/conectados-icon.png"></div>
+        <li><a class="green-text text-darken-1" href="./index.html">Início</a></li>
+        <li><a class="green-text text-darken-1" href="./our_team.html">Nosso time</a></li>
+        <li><a class="green-text text-darken-1" href="./our_mission.html">Nossa proposta</a></li>
+        <li><a class="green-text text-darken-1" href="./sign_up.html">Cadastro</a></li>
+        <li><a class="green-text text-darken-1" href="./sign_in.html">Plataforma</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div><!-- container -->
+  </nav>
+
+  <div id="firstStep" class="section first-step">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12 center">
+            <a id="btnRegisterBeneficiary" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">assignment_ind</i>Beneficiário</a>
+          </div><!-- beneficiary -->
+        </div><!-- row -->
+        <div class="row">
+          <div class="col s12 l12 center">
+            <a id="btnRegisterVoluntary" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">loyalty</i>Voluntário</a>
+          </div><!-- voluntary -->
+        </div><!-- row -->
+      </div><!-- container -->
+  </div><!-- section first step -->
+<!--#####################SESSÃO INICIO BENEFICIARIO##############################-->
+  <div id="registrationBeneficiary" class="section registration-beneficiary">
+    <div class="container">
+      <div class="row">
+        <form method="POST" action="./services/singUpbeneficiary.php" class="col s12">
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="firstNameBeneficiary" name="firstNameBeneficiary" type="text" class="validate" required>
+              <label for="firstNameBeneficiary">Primeiro Nome</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="lastNameBeneficiary" name="lastNameBeneficiary" type="text" class="validate" required>
+              <label for="lastNameBeneficiary">Sobrenome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input placeholder="Apenas Números" id="cpfBeneficiary" name= "cpfBeneficiary"type="text" class="validate" minLength="11" maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+              <label for="cpfBeneficiary">CPF</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="emailBeneficiary" type="email" name="emailBeneficiary" class="validate" required>
+              <label for="emailBeneficiary">E-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="passwordBeneficiary" name="passwordBeneficiary" type="password" class="validate" required>
+              <label for="passwordBeneficiary">Senha</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="passwordConfirmBeneficiary"  name="passwordConfirmBeneficiary" type="password" class="validate" required>
+              <label for="passwordConfirmBeneficiary">Confirmar senha</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="addressBeneficiary" name="addressBeneficiary" type="text" class="validate" required>
+              <label for="addressBeneficiary">Endereço</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="numberAddressBeneficiary" name="numberAddressBeneficiary" type="text" class="validate" required>
+              <label for="numberAddressBeneficiary">Número</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l12">
+              <input id="complementAddressBeneficiary" name="complementAddressBeneficiary" type="text" class="validate">
+              <label for="complementAddressBeneficiary">Complemento</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+              <select name=district>
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Água Verde">Água Verde</option>
+                <option value="Bairro Novo I">Bairro Novo I</option>
+                <option value="Bairro Novo II">Bairro Novo II</option>
+                <option value="Betânia">Betânia</option>
+                <option value="Centro">Centro</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Itupanema">Itupanema</option>
+                <option value="Jardim Cabano">Jardim Cabano</option>
+                <option value="Laranjal">Laranjal</option>
+                <option value="Nazaré">Nazaré</option>
+                <option value="Pedreira">Pedreira</option>
+                <option value="Vila do Conde">Vila do Conde</option>
+                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Bairro</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="city">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Barcarena">Barcarena</option>
+                <option value="Outra">Outra</option>
+              </select>
+              <label>Cidade</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="state">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Pará">Pará</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Estado</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <select name="renda">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Não possuo renda">Não possuo renda</option>
+                <option value="Abaixo de um salário mínimo">Abaixo de um salário mínimo</option>
+                <option value="Um salário mínimo">Um salário mínimo</option>
+                <option value="Acima de um salário mínimo">Acima de um salário mínimo</option>
+              </select>
+              <label>Qual sua renda?</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <select name="singleCard">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+              <label>Possui CadÚnico ou número NIS?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 l12 center">
+              <button id="submitRegistrationBeneficiary" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- container -->
+  </div><!-- section registration-beneficiary -->
+
+  <div id="secondStep" class="section second-step">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l12 center">
+          <a id="btnRegisterVoluntaryPf" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">person</i>Pessoa Física</a>
+        </div><!-- voluntary pf -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col s12 l12 center">
+          <a id="btnRegisterVoluntaryPj" class="waves-effect waves-light btn-large green darken-1"><i class="material-icons right">business</i>Pessoa Jurídica</a>
+        </div><!-- voluntary pj -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- section second step -->
+<!--#####################SESSÃO FIM BENEFICIARIO##############################-->
+<!--#####################SESSÃO INICIO PESSOA FISICA##############################-->
+
+  <div id="registrationVoluntaryPf" class="section registration-voluntary-pf">
+    <div class="container">
+      <div class="row">
+        <form method="POST" action="./services/singUpPhysicalPerson.php" class="col s12">
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="firstNameVoluntaryPf" name="firstNameVoluntaryPf" type="text" class="validate" required>
+              <label for="firstNameVoluntaryPf">Primeiro Nome</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="lastNameVoluntaryPf" name="lastNameVoluntaryPf" type="text" class="validate" required>
+              <label for="lastNameVoluntaryPf">Sobrenome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input placeholder="Apenas Números" id="cpfVoluntary" name="cpfVoluntary" type="text" class="validate" minLength="11" maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+              <label for="cpfVoluntary">CPF</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="emailVoluntaryPf" name="emailVoluntaryPf" type="email" class="validate" required>
+              <label for="emailVoluntaryPf">E-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="passwordVoluntaryPf" name="passwordVoluntaryPf" type="password" class="validate" required>
+              <label for="passwordVoluntaryPf">Senha</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="passwordConfirmVoluntaryPf" type="password" class="validate" required>
+              <label for="passwordConfirmVoluntaryPf">Confirmar senha</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="addressVoluntaryPf" name="addressVoluntaryPf" type="text" class="validate" required>
+              <label for="addressVoluntaryPf">Endereço</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="numberAddressVoluntaryPf"  name="numberAddressVoluntaryPf" type="text" class="validate" required>
+              <label for="numberAddressVoluntaryPf">Número</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l12">
+              <input id="complementAddressVoluntaryPf" name="complementAddressVoluntaryPf" type="text" class="validate">
+              <label for="complementAddressVoluntaryPf">Complemento</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+              <select name="districtPf">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Água Verde">Água Verde</option>
+                <option value="Bairro Novo I">Bairro Novo I</option>
+                <option value="Bairro Novo II">Bairro Novo II</option>
+                <option value="Betânia">Betânia</option>
+                <option value="Centro">Centro</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Itupanema">Itupanema</option>
+                <option value="Jardim Cabano">Jardim Cabano</option>
+                <option value="Laranjal">Laranjal</option>
+                <option value="Nazaré">Nazaré</option>
+                <option value="Pedreira">Pedreira</option>
+                <option value="Vila do Conde">Vila do Conde</option>
+                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Bairro</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="cityPf">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Barcarena">Barcarena</option>
+                <option value="Outra">Outra</option>
+              </select>
+              <label>Cidade</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="statePf">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Pará">Pará</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Estado</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <select name="helpPf">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Doações de bens perecíveis">Doações de bens perecíveis</option>
+                <option value="Doações de bens não perecíveis">Doações de bens não perecíveis</option>
+                <option value="Doação de bens diversos">Doação de bens diversos</option>
+                <option value="Voluntariado em ações comunitárias">Voluntariado em ações comunitárias</option>
+                <option value="Outras ações solidárias">Outras ações solidárias</option>
+              </select>
+              <label>Como desejo ajudar:</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <select>
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+              <label>Deseja se cadastrar como beneficiário?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 l12 center">
+              <button id="submitRegistrationVoluntaryPf" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- container -->
+  </div><!-- section registration-voluntary-pf -->
+<!--#####################SESSÃO FIM PESSOA FISICA##############################-->
+<!--#####################SESSÃO INICIO PESSOA JURIDICA##############################-->
+
+  <div id="registrationVoluntaryPj" class="section registration-voluntary-pj">
+    <div class="container">
+      <div class="row">
+        <form method="POST" action="./services/singUpLegalPerson.php"  class="col s12">
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="companyName" name="companyName" type="text" class="validate" required>
+              <label for="companyName">Razão Social</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="fantasyName" name="fantasyName" type="text" class="validate" required>
+              <label for="fantasyName">Nome Fantasia</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input placeholder="Apenas Números" id="cnpjVoluntary" name="cnpjVoluntary" type="text" class="validate" minLength="14" maxlength="14" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+              <label for="cnpjVoluntary">CNPJ</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="emailVoluntaryPj" name="emailVoluntaryPj" type="email" class="validate" required>
+              <label for="emailVoluntaryPj">E-mail</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="passwordVoluntaryPj" name="passwordVoluntaryPj" type="password" class="validate" required>
+              <label for="passwordVoluntaryPj">Senha</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="passwordConfirmVoluntaryPj"  name="passwordConfirmVoluntaryPj" type="password" class="validate" required>
+              <label for="passwordConfirmVoluntaryPj">Confirmar senha</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="addressVoluntaryPj" name="addressVoluntaryPj" type="text" class="validate" required>
+              <label for="addressVoluntaryPj">Endereço</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="numberAddressVoluntaryPj" name="numberAddressVoluntaryPj" type="text" class="validate" required>
+              <label for="numberAddressVoluntaryPj">Número</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l12">
+              <input id="complementAddressVoluntaryPj" name="complementAddressVoluntaryPj" type="text" class="validate">
+              <label for="complementAddressVoluntaryPj">Complemento</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+              <select name="districtPj">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Água Verde">Água Verde</option>
+                <option value="Bairro Novo I">Bairro Novo I</option>
+                <option value="Bairro Novo II">Bairro Novo II</option>
+                <option value="Betânia">Betânia</option>
+                <option value="Centro">Centro</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Itupanema">Itupanema</option>
+                <option value="Jardim Cabano">Jardim Cabano</option>
+                <option value="Laranjal">Laranjal</option>
+                <option value="Nazaré">Nazaré</option>
+                <option value="Pedreira">Pedreira</option>
+                <option value="Vila do Conde">Vila do Conde</option>
+                <option value="Vila dos Cabanos">Vila dos Cabanos</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Bairro</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="cityPj">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Barcarena">Barcarena</option>
+                <option value="Outra">Outra</option>
+              </select>
+              <label>Cidade</label>
+            </div>
+            <div class="input-field col s12 l4">
+              <select name="statePj">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Pará">Pará</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label>Estado</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <select name="helpPj">
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Doações de bens perecíveis">Doações de bens perecíveis</option>
+                <option value="Doações de bens não perecíveis">Doações de bens não perecíveis</option>
+                <option value="Doação de bens diversos">Doação de bens diversos</option>
+                <option value="Voluntariado em ações comunitárias">Voluntariado em ações comunitárias</option>
+                <option value="Outras ações solidárias">Outras ações solidárias</option>
+              </select>
+              <label>Como desejo ajudar:</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <select>
+                <option value="" disabled selected>Escolha sua opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+              <label>Deseja se cadastrar como beneficiário?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 l12 center">
+              <button id="submitRegistrationVoluntaryPj" class="btn waves-effect waves-light green darken-1" type="submit" name="action">Cadastrar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- container -->
+  </div><!-- section registration-voluntary-pj -->
+
+  <footer class="page-footer green darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Conectados</h5>
+          <p class="grey-text text-lighten-4">
+              Temos o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio.
+          </p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Navegue pelo site</h5>
+          <ul>
+              <li><a class="white-text" href="./index.html">Início</a></li>
+              <li><a class="white-text" href="./our_team.html">Nosso time</a></li>
+              <li><a class="white-text" href="./our_mission.html">Nossa proposta</a></li>
+              <li><a class="white-text" href="./sign_up.html">Cadastro</a></li>
+              <li><a class="white-text" href="./sign_in.html">Plataforma</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Informações</h5>
+          <ul>
+            <i class="material-icons">email</i>
+            <li class="white-text">equipebiblios@gmail.com</li>
+            <i class="material-icons">phone</i>
+            <li class="white-text">(91) 9 8516-0142</li>
+            <i class="material-icons">place</i>
+            <li class="white-text">Tv. da Matriz, prox. ao MPPA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container footer-mobile">
+            <p class="white-text s12 l6 left">&copy;Conectados v. 1.2.20</p>
+            <p class="white-text s12 l6 right">Desenvolvido por G. S. Cardoso e Equipe Biblios</p>
+          </div>
+        </div><!-- footer-copyright -->
+    </div> <!-- container -->
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./js/materialize.js"></script>
+  <script src="./js/init.js"></script>
+</body>
+</html>

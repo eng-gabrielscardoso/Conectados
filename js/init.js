@@ -4,6 +4,46 @@
     $('.sidenav').sidenav();
 
     // Custom Javascript of SIGN UP
+    $('#btnRetFirstStepMobile').click(function(){
+      $('#registrationBeneficiary').fadeOut();
+      $('#firstStep').fadeIn();
+    });
+
+    $('#btnRetFirstStepDesktop').click(function(){
+      $('#registrationBeneficiary').fadeOut();
+      $('#firstStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepToFirstStepMobile').click(function(){
+      $('#secondStep').fadeOut();
+      $('#firstStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepToFirstStepDesktop').click(function(){
+      $('#secondStep').fadeOut();
+      $('#firstStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepMobilePf').click(function(){
+      $('#registrationVoluntaryPf').fadeOut();
+      $('#secondStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepDesktopPf').click(function(){
+      $('#registrationVoluntaryPf').fadeOut();
+      $('#secondStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepMobilePj').click(function(){
+      $('#registrationVoluntaryPj').fadeOut();
+      $('#secondStep').fadeIn();
+    });
+
+    $('#btnRetSecondStepDesktopPj').click(function(){
+      $('#registrationVoluntaryPj').fadeOut();
+      $('#secondStep').fadeIn();
+    });
+    
     $('#btnRegisterBeneficiary').click(function(){
       $('#firstStep').fadeOut();
       $('#registrationBeneficiary').fadeIn(function(){
@@ -16,10 +56,6 @@
           }
         });
       });
-    });
-
-    $(document).ready(function(){
-      $('select').formSelect();
     });
 
     $('#btnRegisterVoluntary').click(function(){
@@ -54,6 +90,9 @@
       });
     });
 
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
     // Custom JavaScript of SIGN IN
     $('#btnLoginBeneficiary').click(function(){
       $('#firstStepLogin').fadeOut();
