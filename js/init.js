@@ -94,6 +94,46 @@
       $('select').formSelect();
     });
     // Custom JavaScript of SIGN IN
+    $('#btnRetFirstStepLoginMobile').click(function(){
+      $('#loginBeneficiary').fadeOut();
+      $('#firstStepLogin').fadeIn();
+    });
+
+    $('#btnRetFirstStepLoginDesktop').click(function(){
+      $('#loginBeneficiary').fadeOut();
+      $('#firstStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepToFirstStepLoginMobile').click(function(){
+      $('#secondStepLogin').fadeOut();
+      $('#firstStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepToFirstStepLoginDesktop').click(function(){
+      $('#secondStepLogin').fadeOut();
+      $('#firstStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepLoginMobilePf').click(function(){
+      $('#loginVoluntaryPf').fadeOut();
+      $('#secondStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepLoginDesktopPf').click(function(){
+      $('#loginVoluntaryPf').fadeOut();
+      $('#secondStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepLoginMobilePj').click(function(){
+      $('#loginVoluntaryPj').fadeOut();
+      $('#secondStepLogin').fadeIn();
+    });
+
+    $('#btnRetSecondStepLoginDesktopPj').click(function(){
+      $('#loginVoluntaryPj').fadeOut();
+      $('#secondStepLogin').fadeIn();
+    });
+
     $('#btnLoginBeneficiary').click(function(){
       $('#firstStepLogin').fadeOut();
       $('#loginBeneficiary').fadeIn();
