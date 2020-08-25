@@ -27,9 +27,15 @@ try {
     $email = $result['email'];
     $password = $result['password'];
 
-    if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
-        setcookie("login", $login);
-        header("Location:../dash_voluntary.html");         
+    if ($email != null || $email != "") {
+        if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
+            setcookie("login", $login);
+            header("Location:../dash_voluntary.html");         
+        } else {
+            echo "<script language='javascript' type='text/javascript'>
+        alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
+            die();
+        }
     } else {
         echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
