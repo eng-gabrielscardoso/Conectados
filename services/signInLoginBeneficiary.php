@@ -16,20 +16,24 @@ $emailLoginBeneficiary = (string)filter_input(INPUT_POST, 'emailLoginBeneficiary
 
 $passwordLoginBeneficiary = (string)filter_input(INPUT_POST, 'passwordLoginBeneficiary', FILTER_DEFAULT);
 $password = sha1($passwordLoginBeneficiary);
+$sql = "select * from Users where email = '$emailLoginBeneficiary' AND password = '$password'";
 
 try {
     $connection = Connection::getConnection();
-    $result = mysqli_query($connection, "select * from" . DB_NAME . ".Users WHERE email = '$emailLoginBeneficiary' AND password = '$password'");
-    //$result = $connection->query("select * from" . DB_NAME . ".Users WHERE email = '$emailLoginBeneficiary' AND password = '$password'");
-        
-    if (mysqli_num_rows($result) <= 0) {
+    
+    $query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
+    $query->execute();
+    $result = $query->fetch();
+    $email = $result['email'];
+    $password = $result['password'];
+
+    if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
+        setcookie("login", $login);
+        header("Location:../dash_voluntary.html");         
+    } else {
         echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
         die();
-        
-    } else {
-        setcookie("login", $login);
-        header("Location:index.php"); 
     }
 } catch (Exception $error) {
     print($error);
