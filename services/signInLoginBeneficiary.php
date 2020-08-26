@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+$login = $_POST['login'];
 /** 
  *  Efetuar cadastro do Beneficiario
  *  @Author Wagner Alcantara / Fabio Silva
@@ -19,9 +20,10 @@ $password = sha1($passwordLoginBeneficiary);
 $sql = "select * from Users where email = '$emailLoginBeneficiary' AND password = '$password'";
 
 try {
+    
     $connection = Connection::getConnection();
 
-    $query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
+    $query = $connection->prepare("select u.email, u.password, p.firstname [physicalPerson] from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
     $query->execute();
     $result = $query->fetch();
     $email = $result['email'];
@@ -29,14 +31,17 @@ try {
 
     if ($email != null || $email != "") {
         if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
-            setcookie("login", $login);
-            header("Location:../dash_voluntary.html?register=");         
+            $_SESSION['login'] = "TESTE";
+            //setcookie("login", $login);
+            header("Location:../dash_beneficiary.php");
         } else {
+            unset($_SESSION['login']);
             echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
             die();
         }
     } else {
+        unset($_SESSION['login']);
         echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
         die();

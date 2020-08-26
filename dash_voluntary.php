@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <?php
+  session_start();
+  if (!isset($_SESSION['login']) == true) {
+    unset($_SESSION['login']);
+    header('Location: ./sign_in.html');
+  }
+
+  $logado = $_SESSION['login'];
+  ?>
   <!-- device meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- seo meta tags -->
   <meta name="author" content="Gabriel Santos Cardoso - Equipe Biblios">
   <meta name="description" content="Site desenvolvido com o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio">
@@ -20,15 +30,16 @@
   <meta property="og:image:type" content="image/jpeg">
   <!-- links  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel='manifest' href='/manifest.json'>
   <link rel="shortcut icon" href="./img/conectados-icon.png" type="image/x-icon" />
   <!-- service workers -->
-  
+
   <!-- title -->
   <title>Plataforma - Conectados</title>
 </head>
+
 <body>
   <nav class="green darken-3" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="./index.html" class="brand-logo">Conectados</a>
@@ -39,6 +50,7 @@
         <li><a href="./our_mission.html">Nossa proposta</a></li>
         <li><a href="./sign_up.html">Cadastro</a></li>
         <li><a href="./sign_in.html">Plataforma</a></li>
+        <li><a href="./services/logout.php">Sair</a></li>
       </ul>
       <!-- mobile-menu -->
       <ul id="nav-mobile" class="sidenav">
@@ -48,14 +60,15 @@
         <li><a class="green-text text-darken-1" href="./our_mission.html">Nossa proposta</a></li>
         <li><a class="green-text text-darken-1" href="./sign_up.html">Cadastro</a></li>
         <li><a class="green-text text-darken-1" href="./sign_in.html">Plataforma</a></li>
+        <li><a class="green-text text-darken-1" href="./services/logout.php">Sair</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div><!-- container -->
   </nav>
-  
+
   <div class="section dash-welcome">
     <div class="container">
-        <h5 class="center green-text text-darken-3">É com muito prazer que o(a) temos como voluntário(a), {Capturar e exibir o nome fantasia}!</h5>
+      <h5 class="center green-text text-darken-3">Agradecemos pela seu interesse e sua ajuda, {Capturar e exibir o primeiro nome da pessoa}!</h5>
     </div>
   </div><!-- dash-welcome -->
 
@@ -69,7 +82,7 @@
 
   <div class="section information-voluntary">
     <div class="container">
-        <!-- 
+      <!-- 
             ESSA SECTION IRÁ APRESENTAR AS AÇÕES QUE ESTÃO SENDO PROMOVIDAS POR OUTROS VOLUNTÁRIOS
          -->
     </div>
@@ -89,17 +102,17 @@
         <div class="col l6 s12">
           <h5 class="white-text">Conectados</h5>
           <p class="grey-text text-lighten-4 footer-text">
-              Temos o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio.
+            Temos o intuito de agregar, distribuir, incentivar e publicar ações solidárias e iniciativas sociais a fim de compartilhar com pessoas em situação de vulnerabilidade socioeconômica da cidade de Barcarena e arredores meios de amparo e auxílio.
           </p>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Navegue pelo site</h5>
           <ul>
-              <li><a class="white-text" href="./index.html">Início</a></li>
-              <li><a class="white-text" href="./our_team.html">Nosso time</a></li>
-              <li><a class="white-text" href="./our_mission.html">Nossa proposta</a></li>
-              <li><a class="white-text" href="./sign_up.html">Cadastro</a></li>
-              <li><a class="white-text" href="./sign_in.html">Plataforma</a></li>
+            <li><a class="white-text" href="./index.html">Início</a></li>
+            <li><a class="white-text" href="./our_team.html">Nosso time</a></li>
+            <li><a class="white-text" href="./our_mission.html">Nossa proposta</a></li>
+            <li><a class="white-text" href="./sign_up.html">Cadastro</a></li>
+            <li><a class="white-text" href="./sign_in.html">Plataforma</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -128,4 +141,5 @@
   <script src="./js/materialize.js"></script>
   <script src="./js/init.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /** 
  *  Efetuar cadastro do Beneficiario
@@ -29,14 +30,18 @@ try {
 
     if ($email != null || $email != "") {
         if ($email = $emailLoginVoluntaryPf && $password = $passwordLoginVoluntaryPf) {
-            setcookie("login", $login);
-            header("Location:../dash_voluntary.html");         
+            $_SESSION['login'] = $emailLoginVoluntaryPf;
+            //setcookie("login", $login);
+            header("Location:../dash_voluntary.php");         
         } else {
+            unset ($_SESSION['login']);
             echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
+            
             die();
         }
     } else {
+        unset ($_SESSION['login']);
         echo "<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');window.location.href='../sign_in.html';</script>";
         die();
