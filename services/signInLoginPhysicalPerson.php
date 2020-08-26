@@ -12,23 +12,23 @@ require_once './connection.php';
 
 // Recupera as informações vinda dos inputs
 
-$emailLoginBeneficiary = (string)filter_input(INPUT_POST, 'emailLoginBeneficiary', FILTER_DEFAULT);
+$emailLoginVoluntaryPf =(string)filter_input(INPUT_POST, 'emailLoginVoluntaryPf', FILTER_DEFAULT);
 
-$passwordLoginBeneficiary = (string)filter_input(INPUT_POST, 'passwordLoginBeneficiary', FILTER_DEFAULT);
-$password = sha1($passwordLoginBeneficiary);
-$sql = "select * from Users where email = '$emailLoginBeneficiary' AND password = '$password'";
+$passwordLoginVoluntaryPf = (string)filter_input(INPUT_POST, 'passwordLoginVoluntaryPf', FILTER_DEFAULT);
+$password = sha1($passwordLoginVoluntaryPf);
+$sql = "select * from Users where email = '$emailLoginVoluntaryPf' AND password = '$password'";
 
 try {
     $connection = Connection::getConnection();
     
-    $query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
+    $query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginVoluntaryPf' AND password = '$password'");
     $query->execute();
     $result = $query->fetch();
     $email = $result['email'];
     $password = $result['password'];
 
     if ($email != null || $email != "") {
-        if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
+        if ($email = $emailLoginVoluntaryPf && $password = $passwordLoginVoluntaryPf) {
             setcookie("login", $login);
             header("Location:../dash_voluntary.html");         
         } else {
