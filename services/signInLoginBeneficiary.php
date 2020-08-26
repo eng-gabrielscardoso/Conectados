@@ -23,17 +23,21 @@ try {
     
     $connection = Connection::getConnection();
 
-    $query = $connection->prepare("select u.email, u.password, p.firstname [physicalPerson] from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
+    //$query = $connection->prepare("select u.email, u.password, p.firstname [physicalPerson] from" . DB_NAME . ".Users where email = '$emailLoginBeneficiary' AND password = '$password'");
+    
+    $query = $connection->prepare("SELECT U.email, U.password, P.firstname FROM" . DB_NAME . ".Users as U," . DB_NAME . ".physicalPerson as P WHERE U.uid = P.uidUser and U.email = '$emailLoginBeneficiary' AND U.password = '$password'");
     $query->execute();
     $result = $query->fetch();
     $email = $result['email'];
     $password = $result['password'];
+    $user = $result['firstname'];
 
     if ($email != null || $email != "") {
         if ($email = $emailLoginBeneficiary && $password = $passwordLoginBeneficiary) {
-            $_SESSION['login'] = "TESTE";
+            $_SESSION['login'] = $emailLoginBeneficiary;
+                     
             //setcookie("login", $login);
-            header("Location:../dash_beneficiary.php");
+            header("Location:../dash_beneficiary.php?user=".$user);
         } else {
             unset($_SESSION['login']);
             echo "<script language='javascript' type='text/javascript'>

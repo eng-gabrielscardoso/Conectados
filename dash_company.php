@@ -10,6 +10,7 @@
   }
 
   $logado = $_SESSION['login'];
+  $user = $_GET['user'];
   ?>
   <!-- device meta tags -->
   <meta charset="UTF-8">
@@ -68,7 +69,7 @@
 
   <div class="section dash-welcome">
     <div class="container">
-      <h5 class="center green-text text-darken-3">É com muito prazer que o(a) temos como voluntário(a), {Capturar e exibir o nome fantasia}!</h5>
+      <h5 class="center green-text text-darken-3">É com muito prazer que o(a) temos como voluntário(a), <?php echo($user) ?>!</h5>
     </div>
   </div><!-- dash-welcome -->
 

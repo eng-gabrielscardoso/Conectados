@@ -10,6 +10,8 @@
   }
 
   $logado = $_SESSION['login'];
+  $user = $_GET['user'];
+  
   ?>
 
   <!-- device meta tags -->
@@ -76,8 +78,12 @@
 
   <div class="section dash-welcome">
     <div class="container">
-      <h5 class="center green-text text-darken-3">Seja muito bem-vindo à Plataforma Conectados, {Capturar e exibir o
-        primeiro nome da pessoa}!</h5>
+      <h5 class="center green-text text-darken-3">Seja muito bem-vindo à Plataforma Conectados, 
+        <?php 
+        echo($user);
+       
+        ?>!
+        </h5>
     </div>
   </div><!-- dash-welcome -->
 

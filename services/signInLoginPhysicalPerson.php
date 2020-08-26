@@ -22,17 +22,19 @@ $sql = "select * from Users where email = '$emailLoginVoluntaryPf' AND password 
 try {
     $connection = Connection::getConnection();
     
-    $query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginVoluntaryPf' AND password = '$password'");
+    //$query = $connection->prepare("select * from" . DB_NAME . ".Users where email = '$emailLoginVoluntaryPf' AND password = '$password'");
+    $query = $connection->prepare("SELECT U.email, U.password, P.firstname FROM" . DB_NAME . ".Users as U," . DB_NAME . ".physicalPerson as P WHERE U.uid = P.uidUser and U.email = '$emailLoginVoluntaryPf' AND U.password = '$password'");
     $query->execute();
     $result = $query->fetch();
     $email = $result['email'];
     $password = $result['password'];
+    $user = $result['firstname'];
 
     if ($email != null || $email != "") {
         if ($email = $emailLoginVoluntaryPf && $password = $passwordLoginVoluntaryPf) {
             $_SESSION['login'] = $emailLoginVoluntaryPf;
             //setcookie("login", $login);
-            header("Location:../dash_voluntary.php");         
+            header("Location:../dash_voluntary.php?user=".$user);         
         } else {
             unset ($_SESSION['login']);
             echo "<script language='javascript' type='text/javascript'>
